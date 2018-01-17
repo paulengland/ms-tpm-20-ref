@@ -1,3 +1,5 @@
+*This is an experimental fork of ms-tpm-20-ref*
+
 This is a Microsoft Visual Studio solution that contains reference implementation of the TPM 2.0 Specification by TCG available at https://trustedcomputinggroup.org/tpm-library-specification.
 
 See the TPMCmd/tpm/include/TpmTypes.h header for the exact revision/date of the TPM 2.0 specification issue, which the given source tree snapshot corresponds to.

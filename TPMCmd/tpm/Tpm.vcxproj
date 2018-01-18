@@ -298,7 +298,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(ProjectDir)include\prototypes\;$(SolutionDir)Platform\include\;$(SolutionDir)Platform\include\prototypes\;$(SolutionDir)LtcInclude\;$(SolutionDIr)OsslInclude\;$(SolutionDir)MsBnInclude\;$(OSSL_ROOT)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(ProjectDir)include\prototypes\;$(SolutionDir)Platform\include\;$(SolutionDir)Platform\include\prototypes\;$(SolutionDir)LtcInclude\;$(SolutionDIr)OsslInclude\;$(SolutionDir)MsBnInclude\;..\..\..\ossl_for_tpm\</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -320,7 +320,7 @@
     </ProjectReference>
     <Link>
       <AdditionalDependencies>platform.lib;libeay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\lib;$(OutDir);%(AdditionalLibraryDirectories);$(OSSL_ROOT)\lib\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\lib;$(OutDir);%(AdditionalLibraryDirectories);..\..\..\ossl_for_tpm\lib\$(Configuration)\</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
